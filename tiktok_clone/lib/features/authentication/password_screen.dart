@@ -73,7 +73,9 @@ class _PasswordScreenState extends State<PasswordScreen> {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: Sizes.size36),
+          padding: const EdgeInsets.symmetric(
+            horizontal: Sizes.size36,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -153,7 +155,10 @@ class _PasswordScreenState extends State<PasswordScreen> {
               Gaps.v16,
               GestureDetector(
                 onTap: _onSubmit,
-                child: FormButton(disabled: !_isPasswordVaild()),
+                child: FormButton(
+                  disabled: !_isPasswordVaild(),
+                  buttonText: "Next",
+                ),
               )
             ],
           ),
