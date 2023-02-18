@@ -79,11 +79,11 @@ class _InterestsScreenState extends State<InterestsScreen> {
   }
 
   void onNextTap() {
-    Navigator.push(
-      context,
+    Navigator.of(context).pushAndRemoveUntil(
       MaterialPageRoute(
         builder: (context) => const TutorialScreen(),
       ),
+      (route) => false,
     );
   }
 
